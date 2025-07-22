@@ -1,1 +1,36 @@
+=== Cadastro da Carta 1 ===
+Estado (letra A a H): B
+Código da carta (ex: B01): B02
+Nome da cidade: Rio das Ostras
+População: 150000
+Área (em km²): 150.75
+PIB (em bilhões de reais): 12.50
+Número de pontos turísticos: 8
+
+=== Cadastro da Carta 2 ===
+Estado (letra A a H): C
+Código da carta (ex: C03): C01
+Nome da cidade: Cabo Frio
+População: 220000
+Área (em km²): 402.50
+PIB (em bilhões de reais): 18.70
+Número de pontos turísticos: 11
+
+=== Carta 1 ===
+Estado: B
+Código: B02
+Nome da Cidade: Rio das Ostras
+População: 150000
+Área: 150.75 km²
+PIB: 12.50 bilhões de reais
+Número de Pontos Turísticos: 8
+
+=== Carta 2 ===
+Estado: C
+Código: C01
+Nome da Cidade: Cabo Frio
+População: 220000
+Área: 402.50 km²
+PIB: 18.70 bilhões de reais
+Número de Pontos Turísticos: 11
 
