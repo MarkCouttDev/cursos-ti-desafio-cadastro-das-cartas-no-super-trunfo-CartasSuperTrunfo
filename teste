@@ -1,3 +1,6 @@
+Nivel Novato Saida a Seguir 
+
+Exemplo de Saida.
 === Cadastro da Carta 1 ===
 Estado (letra A a H): B
 Código da carta (ex: B01): B02
@@ -33,4 +36,30 @@ População: 220000
 Área: 402.50 km²
 PIB: 18.70 bilhões de reais
 Número de Pontos Turísticos: 11
+
+Nivel Aventureiro A Seguir.
+
+Exemplo de Saida.
+=== Carta 1 ===
+Estado: A
+Código: A01
+Nome da Cidade: São Paulo
+População: 12325000
+Área: 1521.11 km²
+PIB: 699.28 bilhões de reais
+Número de Pontos Turísticos: 50
+Densidade Populacional: 8102.47 hab/km²
+PIB per Capita: 56724.32 reais
+
+=== Carta 2 ===
+Estado: B
+Código: B02
+Nome da Cidade: Rio de Janeiro
+População: 6748000
+Área: 1200.25 km²
+PIB: 300.50 bilhões de reais
+Número de Pontos Turísticos: 30
+Densidade Populacional: 5622.24 hab/km²
+PIB per Capita: 44532.91 reais
+
 
