@@ -1,65 +1,22 @@
-Nivel Novato Saida a Seguir 
-
-Exemplo de Saida.
 === Cadastro da Carta 1 ===
 Estado (letra A a H): B
-Código da carta (ex: B01): B02
+Código da carta: B02
 Nome da cidade: Rio das Ostras
 População: 150000
-Área (em km²): 150.75
-PIB (em bilhões de reais): 12.50
-Número de pontos turísticos: 8
+Área (km²): 150.75
+PIB (bilhões R$): 12.50
+Pontos turísticos: 8
 
 === Cadastro da Carta 2 ===
 Estado (letra A a H): C
-Código da carta (ex: C03): C01
+Código da carta: C01
 Nome da cidade: Cabo Frio
 População: 220000
-Área (em km²): 402.50
-PIB (em bilhões de reais): 18.70
-Número de pontos turísticos: 11
+Área (km²): 402.50
+PIB (bilhões R$): 18.70
+Pontos turísticos: 11
 
-=== Carta 1 ===
-Estado: B
-Código: B02
-Nome da Cidade: Rio das Ostras
-População: 150000
-Área: 150.75 km²
-PIB: 12.50 bilhões de reais
-Número de Pontos Turísticos: 8
-
-=== Carta 2 ===
-Estado: C
-Código: C01
-Nome da Cidade: Cabo Frio
-População: 220000
-Área: 402.50 km²
-PIB: 18.70 bilhões de reais
-Número de Pontos Turísticos: 11
-
-Nivel Aventureiro A Seguir.
-
-Exemplo de Saida.
-=== Carta 1 ===
-Estado: A
-Código: A01
-Nome da Cidade: São Paulo
-População: 12325000
-Área: 1521.11 km²
-PIB: 699.28 bilhões de reais
-Número de Pontos Turísticos: 50
-Densidade Populacional: 8102.47 hab/km²
-PIB per Capita: 56724.32 reais
-
-=== Carta 2 ===
-Estado: B
-Código: B02
-Nome da Cidade: Rio de Janeiro
-População: 6748000
-Área: 1200.25 km²
-PIB: 300.50 bilhões de reais
-Número de Pontos Turísticos: 30
-Densidade Populacional: 5622.24 hab/km²
-PIB per Capita: 44532.91 reais
-
-
+=== Comparação de Cartas (Atributo: População) ===
+Carta 1 - Rio das Ostras (B): 150000
+Carta 2 - Cabo Frio (C): 220000
+Resultado: Carta 2 (Cabo Frio) venceu!
