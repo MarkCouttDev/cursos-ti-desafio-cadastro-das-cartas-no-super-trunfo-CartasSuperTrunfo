@@ -1,47 +1,53 @@
 #include <stdio.h>
 
 int main() {
-    // Dados para Carta 1
+    // ===== Dados para Carta 1 =====
+    // Entrada: Estado representado por uma letra (A a H)
     char estado1;
+    // Entrada: Código único da carta
     char codigo1[4];
+    // Entrada: Nome da cidade referente à carta
     char cidade1[50];
+    // Entrada: População da cidade
     unsigned long int populacao1;
+    // Entrada: Área da cidade em km²
     float area1, pib1;
+    // Entrada: Número de pontos turísticos relevantes
     int pontos1;
-    float densidade1, pibPerCapita1, superPoder1;
+    // Cálculos derivados
+    float densidade1, pibPerCapita1;
 
-    // Dados para Carta 2
+    // ===== Dados para Carta 2 =====
     char estado2;
     char codigo2[4];
     char cidade2[50];
     unsigned long int populacao2;
     float area2, pib2;
     int pontos2;
-    float densidade2, pibPerCapita2, superPoder2;
+    float densidade2, pibPerCapita2;
 
-    // Entrada Carta 1
+    // ===== Cadastro Carta 1 =====
     printf("=== Cadastro da Carta 1 ===\n");
-    printf("Estado (letra A a H): ");
+    printf("Estado (letra A a H): "); // Entrada do Estado
     scanf(" %c", &estado1);
-    printf("Código da carta: ");
+    printf("Código da carta: "); // Entrada do Código
     scanf("%s", codigo1);
-    printf("Nome da cidade: ");
+    printf("Nome da cidade: "); // Entrada do Nome da Cidade
     scanf(" %[^\n]", cidade1);
-    printf("População: ");
+    printf("População: "); // Entrada da População
     scanf("%lu", &populacao1);
-    printf("Área (km²): ");
+    printf("Área (km²): "); // Entrada da Área
     scanf("%f", &area1);
-    printf("PIB (bilhões R$): ");
+    printf("PIB (bilhões R$): "); // Entrada do PIB
     scanf("%f", &pib1);
-    printf("Pontos turísticos: ");
+    printf("Pontos turísticos: "); // Entrada dos pontos turísticos
     scanf("%d", &pontos1);
 
-    // Cálculo Carta 1
-    densidade1 = populacao1 / area1;
-    pibPerCapita1 = (pib1 * 1000000000) / populacao1;
-    superPoder1 = (float)populacao1 + area1 + pib1 + pontos1 + pibPerCapita1 + (1 / densidade1);
+    // ===== Cálculos Carta 1 =====
+    densidade1 = populacao1 / area1; // Cálculo da densidade populacional
+    pibPerCapita1 = (pib1 * 1000000000) / populacao1; // Cálculo do PIB per capita
 
-    // Entrada Carta 2
+    // ===== Cadastro Carta 2 =====
     printf("\n=== Cadastro da Carta 2 ===\n");
     printf("Estado (letra A a H): ");
     scanf(" %c", &estado2);
@@ -58,20 +64,27 @@ int main() {
     printf("Pontos turísticos: ");
     scanf("%d", &pontos2);
 
-    // Cálculo Carta 2
+    // ===== Cálculos Carta 2 =====
     densidade2 = populacao2 / area2;
     pibPerCapita2 = (pib2 * 1000000000) / populacao2;
-    superPoder2 = (float)populacao2 + area2 + pib2 + pontos2 + pibPerCapita2 + (1 / densidade2);
 
-    // Resultados das Comparações
-    printf("\n=== Comparação de Cartas ===\n");
-    printf("População: Carta 1 venceu (%d)\n", populacao1 > populacao2);
-    printf("Área: Carta 1 venceu (%d)\n", area1 > area2);
-    printf("PIB: Carta 1 venceu (%d)\n", pib1 > pib2);
-    printf("Pontos Turísticos: Carta 1 venceu (%d)\n", pontos1 > pontos2);
-    printf("Densidade Populacional: Carta 1 venceu (%d)\n", densidade1 < densidade2);
-    printf("PIB per Capita: Carta 1 venceu (%d)\n", pibPerCapita1 > pibPerCapita2);
-    printf("Super Poder: Carta 1 venceu (%d)\n", superPoder1 > superPoder2);
+    // ===== Comparação baseada em atributo fixo: População =====
+    printf("\n=== Comparação de Cartas (Atributo: População) ===\n");
+
+    // Saída: Exibição da população da Carta 1
+    printf("Carta 1 - %s (%c): %lu\n", cidade1, estado1, populacao1);
+
+    // Saída: Exibição da população da Carta 2
+    printf("Carta 2 - %s (%c): %lu\n", cidade2, estado2, populacao2);
+
+    // Saída: Resultado da comparação
+    if (populacao1 > populacao2) {
+        printf("Resultado: Carta 1 (%s) venceu!\n", cidade1);
+    } else if (populacao2 > populacao1) {
+        printf("Resultado: Carta 2 (%s) venceu!\n", cidade2);
+    } else {
+        printf("Resultado: Empate! Ambas possuem a mesma população.\n");
+    }
 
     return 0;
 }
